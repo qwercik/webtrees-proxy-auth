@@ -1,0 +1,15 @@
+{
+    "name": "qwercik/webtrees-proxy-auth",
+    "autoload": {
+        "psr-4": {
+            "Komputeryk\\Webtrees\\ProxyAuth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eryk Andrzejewski",
+            "email": "erykandrzejewski@gmail.com"
+        }
+    ],
+    "require": {}
+}
