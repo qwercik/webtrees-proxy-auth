@@ -87,9 +87,8 @@ class ProxyAuthModule extends AbstractModule implements ModuleCustomInterface, M
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        $response = $handler->handle($request);
         $this->authenticateByHeader($request);
-        return $response;
+        return $handler->handle($request);
     }
 
     private function authenticateByHeader(ServerRequestInterface $request): void
